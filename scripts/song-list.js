@@ -10,10 +10,18 @@ which we'll use to render the song number.
      Pass it a template literal so that we can insert data
      directly into the string. Assign it to song.element so
      that the player object can access the element.
+     - Each table row is defined with the <tr> tag
+     - A table data/cell is defined with the <td> tag.
     */
     song.element = $(`
       <tr>
-        <td>${index + 1}</td>
+        <td>
+          <button>
+            <span class="song-number">${index + 1}</span>
+            <span class="ion-play"></span>
+            <span class="ion-pause"></span>
+          </button>
+        </td>
         <td>${song.title}</td>
         <td>${song.duration}</td>
       </tr>
