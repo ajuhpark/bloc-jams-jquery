@@ -29,4 +29,19 @@
     //call player.playPause() and pass it nextSong.
     player.playPause(nextSong);
   });
+
+  //adding a new click handler to the #next button
+  $('button#previous').on('click', function(){
+    // console.log('im here');
+    if(player.playState !== 'playing'){return;}
+    const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
+
+    const previousSongIndex = currentSongIndex - 1;
+    if(previousSongIndex >= album.songs.length){return;}
+
+    const previousSong = album.songs[previousSongIndex];
+
+    player.playPause(previousSong);
+
+  })
 }
