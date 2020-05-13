@@ -30,6 +30,9 @@ which we'll use to render the song number.
     //pass the .playPause() method a song object inside a click event handler.
     song.element.on('click', event => {
       player.playPause(song);
+      /*add a line to the click handler that sets the playState attribute of
+      button#play-pause to player.playState.*/
+      $('button#play-pause').attr('playState, player.playState');
     });
 
 
