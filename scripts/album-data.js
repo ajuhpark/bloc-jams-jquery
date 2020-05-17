@@ -2,7 +2,7 @@ const album = {
   title: 'The Colors',
   artist: 'Pablo Picasso',
   releaseInfo: '1909 Spanish Records',
-  albumArtUrl: 'assets/images/album_covers/01.png',
+  albumArtUrl: 'assets/images/album_covers/02.png',
   songs: [
     { title: 'Blue', duration: '161.71', soundFileUrl: 'assets/music/blue.mp3' },
     { title: 'Green', duration: '103.96', soundFileUrl: 'assets/music/green.mp3' },
